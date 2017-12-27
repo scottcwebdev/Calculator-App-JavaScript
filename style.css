@@ -1,0 +1,82 @@
+/**********
+Global
+**********/
+body {
+  background-color: #f9f9f9;
+}
+button, input[type="submit"], input[type="reset"] {
+  background: none !important;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit !important;
+  padding: 0! important;
+}
+#calculator{
+  background: linear-gradient(#262cef, #e44b8c);
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+}
+
+/**********
+Screen
+**********/
+#view {
+  padding-right: 10px;
+}
+#screen {
+  align-items: center;
+  color: #FDFBFD;
+  display: flex;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  height: 70px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/**********
+Buttons
+**********/
+.button-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+}
+div[id*="button-row"] button:last-child {
+  background: rgba(255, 255, 255, 0.3)!important;
+  color: #4d4d4d;
+}
+div[id*="button-row"] button:hover {
+  background: rgba(255, 255, 255, 0.5)!important;
+}
+div[id*="button-row"] button:nth-child(-n+3) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+button {
+  background: none;
+  border-radius: 0;
+  color: #FDFBFD;
+  cursor: pointer;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  height: 70px;
+  padding: 0;
+  transition: all 0.3s linear;
+  width: 70px;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.5)!important;
+}
+#zero {
+  height: 70px;
+  width: 140px;
+}
+#equal {
+  color: #DA0009;
+}
